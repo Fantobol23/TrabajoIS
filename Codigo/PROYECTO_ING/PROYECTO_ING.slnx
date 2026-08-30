@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="BE_Entities/BE_Entities.csproj" Id="ce2bd2e8-ea71-4542-a9cf-906e69f18a96" />
+  <Project Path="BLL_Business/BLL_Business.csproj" Id="1ef88873-9f85-42fd-b642-088d2b24d2c2" />
+  <Project Path="DAL_DataAccess/DAL_DataAccess.csproj" Id="5c09394e-83a7-47be-ab3b-3f2cb5d3e812" />
+  <Project Path="SERVICES/SERVICES.csproj" Id="9807e830-5ac4-4dd9-8391-57fda8dad31e" />
+  <Project Path="UI_Presentation/UI_Presentation.csproj" Id="1e7880d6-aa59-41a3-bdc0-52af59e750ce" />
+</Solution>

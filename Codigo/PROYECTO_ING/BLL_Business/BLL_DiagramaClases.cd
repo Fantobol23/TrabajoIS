@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BLL_Business.Users_Services.User_Service">
+    <Position X="5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAQAAAAAAAACAAAAAAQAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Users_Services\User_Service.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL_Business.Login_Logout_Services.Hash_Service">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Login_Logout_Services\Hash_Service.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BLL_Business.Login_Logout_Services.Login_Service">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Login_Logout_Services\Login_Service.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

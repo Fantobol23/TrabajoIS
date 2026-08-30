@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E7880D6-AA59-41A3-BDC0-52AF59E750CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI_Presentation</RootNamespace>
+    <AssemblyName>UI_Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ButtonCloseForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ButtonCloseForm.Designer.cs">
+      <DependentUpon>ButtonCloseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\ActivityLog\FrmActivityLogList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\ActivityLog\FrmActivityLogList.Designer.cs">
+      <DependentUpon>FrmActivityLogList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersCreate.Designer.cs">
+      <DependentUpon>FrmUsersCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersEdit.Designer.cs">
+      <DependentUpon>FrmUsersEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersList.Designer.cs">
+      <DependentUpon>FrmUsersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Admin\Users\FrmUsersState.Designer.cs">
+      <DependentUpon>FrmUsersState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login_Register\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_Register\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login_Register\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login_Register\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\Profile\FrmProfileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Profile\FrmProfileEdit.Designer.cs">
+      <DependentUpon>FrmProfileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\Profile\FrmProfileInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Profile\FrmProfileInfo.Designer.cs">
+      <DependentUpon>FrmProfileInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main\Profile\FrmProfilePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main\Profile\FrmProfilePassword.Designer.cs">
+      <DependentUpon>FrmProfilePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\ButtonCloseForm.resx">
+      <DependentUpon>ButtonCloseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\ActivityLog\FrmActivityLogList.resx">
+      <DependentUpon>FrmActivityLogList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersCreate.resx">
+      <DependentUpon>FrmUsersCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersEdit.resx">
+      <DependentUpon>FrmUsersEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersList.resx">
+      <DependentUpon>FrmUsersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersState.resx">
+      <DependentUpon>FrmUsersState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login_Register\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login_Register\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Profile\FrmProfileEdit.resx">
+      <DependentUpon>FrmProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Profile\FrmProfileInfo.resx">
+      <DependentUpon>FrmProfileInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main\Profile\FrmProfilePassword.resx">
+      <DependentUpon>FrmProfilePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE_Entities\BE_Entities.csproj">
+      <Project>{ce2bd2e8-ea71-4542-a9cf-906e69f18a96}</Project>
+      <Name>BE_Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL_Business\BLL_Business.csproj">
+      <Project>{1ef88873-9f85-42fd-b642-088d2b24d2c2}</Project>
+      <Name>BLL_Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SERVICES\SERVICES.csproj">
+      <Project>{9807e830-5ac4-4dd9-8391-57fda8dad31e}</Project>
+      <Name>SERVICES</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-accede-redondeado-derecho-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-accede-redondeado-derecho-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-accede-redondeado-derecho-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-añadir-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-añadir-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-añadir-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-borrar-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-borrar-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-borrar-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-buscar-en-la-lista-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-buscar-en-la-lista-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-buscar-en-la-lista-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-casilla-de-verificación-marcada-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-casilla-de-verificación-marcada-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-casilla-de-verificación-marcada-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-casilla-indeterminada-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-casilla-indeterminada-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-casilla-indeterminada-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-cerrar-ventana-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-cerrar-ventana-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-cerrar-ventana-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-configuración-de-sincronización-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-configuración-de-sincronización-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-configuración-de-sincronización-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-contraseña-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-contraseña-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-contraseña-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-descargar-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-descargar-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-descargar-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-en-alza-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-en-alza-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-en-alza-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-engranaje-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-engranaje-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-engranaje-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-fondo-de-pantalla-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-fondo-de-pantalla-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-fondo-de-pantalla-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-menú-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-menú-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-menú-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-orientación-de-bloqueo-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-orientación-de-bloqueo-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-orientación-de-bloqueo-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-proceso-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-proceso-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-proceso-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-página-principal-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-página-principal-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-página-principal-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-selfies-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-selfies-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-selfies-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-signo-menos-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-signo-menos-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-signo-menos-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-soporte-informático-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-soporte-informático-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-soporte-informático-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-accede-redondeado-derecho-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-accede-redondeado-derecho-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-accede-redondeado-derecho-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-añadir-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-añadir-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-añadir-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-borrar-para-siempre-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-borrar-para-siempre-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-borrar-para-siempre-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-buscar-en-la-lista-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-buscar-en-la-lista-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-buscar-en-la-lista-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-casilla-de-verificación-marcada-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-casilla-de-verificación-marcada-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-casilla-de-verificación-marcada-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-casilla-indeterminada-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-casilla-indeterminada-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-casilla-indeterminada-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-cerrar-ventana-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-cerrar-ventana-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-cerrar-ventana-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-configuración-de-sincronización-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-configuración-de-sincronización-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-configuración-de-sincronización-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-contraseña-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-contraseña-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-contraseña-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-descargar-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-descargar-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-descargar-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-en-alza-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-en-alza-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-en-alza-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-engranaje-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-engranaje-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-engranaje-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-fondo-de-pantalla-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-fondo-de-pantalla-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-fondo-de-pantalla-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-menú-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-menú-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-menú-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-orientación-de-bloqueo-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-orientación-de-bloqueo-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-orientación-de-bloqueo-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-proceso-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-proceso-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-proceso-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-página-principal-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-página-principal-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-página-principal-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-selfies-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-selfies-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-selfies-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-signo-menos-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-signo-menos-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-signo-menos-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-soporte-informático-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-soporte-informático-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-soporte-informático-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-accede-redondeado-derecho-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-accede-redondeado-derecho-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-accede-redondeado-derecho-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-añadir-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-añadir-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-añadir-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-borrar-para-siempre-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-borrar-para-siempre-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-borrar-para-siempre-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-buscar-en-la-lista-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-buscar-en-la-lista-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-buscar-en-la-lista-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-casilla-de-verificación-marcada-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-casilla-de-verificación-marcada-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-casilla-de-verificación-marcada-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-casilla-indeterminada-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-casilla-indeterminada-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-casilla-indeterminada-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-cerrar-ventana-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-cerrar-ventana-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-cerrar-ventana-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-configuración-de-sincronización-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-configuración-de-sincronización-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-configuración-de-sincronización-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-contraseña-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-contraseña-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-contraseña-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-descargar-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-descargar-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-descargar-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-en-alza-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-en-alza-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-en-alza-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-engranaje-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-engranaje-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-engranaje-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-fondo-de-pantalla-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-fondo-de-pantalla-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-fondo-de-pantalla-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-menú-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-menú-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-menú-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-orientación-de-bloqueo-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-orientación-de-bloqueo-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-orientación-de-bloqueo-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-proceso-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-proceso-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-proceso-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-página-principal-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-página-principal-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-página-principal-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-selfies-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-selfies-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-selfies-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-signo-menos-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-signo-menos-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-signo-menos-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-soporte-informático-24.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-soporte-informático-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-soporte-informático-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user1-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user1-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user1-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user2-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user2-50.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user3-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user3-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user1-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user1-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user1-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user2-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user2-50.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user3-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user3-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user1-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user1-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user1-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user2-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user2-50.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user3-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user3-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-key1-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-key1-30.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-key1-60.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user4-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Dark\dk-user4-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user4-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-user4-96.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-key1-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-key1-30.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Yellow\yw-key1-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user4-48.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-user4-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-key1-100.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-key1-30.png" />
+    <EmbeddedResource Include="Resources\Themes\Material_Outlined_Blue\bl-key1-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Icons\sistema.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

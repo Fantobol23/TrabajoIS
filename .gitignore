@@ -1,0 +1,6 @@
+**/.vs
+**/Debug
+**/bin/
+**/obj/
+*.user
+*.useroscache

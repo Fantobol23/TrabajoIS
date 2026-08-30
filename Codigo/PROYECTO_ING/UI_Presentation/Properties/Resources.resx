@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dk-página-principal-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-página-principal-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-orientación-de-bloqueo-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-orientación-de-bloqueo-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user1-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user1-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-casilla-indeterminada-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-casilla-indeterminada-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-en-alza-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-en-alza-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-selfies-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-selfies-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-página-principal-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-página-principal-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-orientación-de-bloqueo-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-orientación-de-bloqueo-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-fondo-de-pantalla-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-fondo-de-pantalla-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-signo-menos-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-signo-menos-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-buscar-en-la-lista-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-buscar-en-la-lista-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-soporte-informático-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-soporte-informático-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-añadir-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-añadir-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-engranaje-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-engranaje-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-en-alza-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-en-alza-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-en-alza-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-en-alza-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-casilla-de-verificación-marcada-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-casilla-de-verificación-marcada-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user2-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user2-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user2-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user2-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-fondo-de-pantalla-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-fondo-de-pantalla-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-configuración-de-sincronización-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-configuración-de-sincronización-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-fondo-de-pantalla-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-fondo-de-pantalla-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-configuración-de-sincronización-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-configuración-de-sincronización-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-fondo-de-pantalla-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-fondo-de-pantalla-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-accede-redondeado-derecho-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-accede-redondeado-derecho-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-configuración-de-sincronización-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-configuración-de-sincronización-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-página-principal-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-página-principal-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user2-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user2-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-añadir-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-añadir-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user1-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user1-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-menú-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-menú-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-orientación-de-bloqueo-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-orientación-de-bloqueo-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-borrar-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-borrar-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user1-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user1-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-accede-redondeado-derecho-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-accede-redondeado-derecho-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-casilla-indeterminada-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-casilla-indeterminada-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-configuración-de-sincronización-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-configuración-de-sincronización-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-casilla-de-verificación-marcada-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-casilla-de-verificación-marcada-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-página-principal-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-página-principal-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-configuración-de-sincronización-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-configuración-de-sincronización-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-añadir-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-añadir-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-accede-redondeado-derecho-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-accede-redondeado-derecho-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-selfies-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-selfies-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-borrar-para-siempre-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-borrar-para-siempre-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user3-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user3-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-accede-redondeado-derecho-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-accede-redondeado-derecho-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-engranaje-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-engranaje-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-buscar-en-la-lista-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-buscar-en-la-lista-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-proceso-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-proceso-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-configuración-de-sincronización-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-configuración-de-sincronización-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-orientación-de-bloqueo-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-orientación-de-bloqueo-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user1-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user1-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user1-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user1-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-proceso-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-proceso-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-añadir-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-añadir-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-menú-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-menú-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-menú-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-menú-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-casilla-de-verificación-marcada-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-casilla-de-verificación-marcada-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-descargar-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-descargar-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-casilla-indeterminada-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-casilla-indeterminada-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-signo-menos-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-signo-menos-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-menú-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-menú-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-cerrar-ventana-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-cerrar-ventana-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-signo-menos-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-signo-menos-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-buscar-en-la-lista-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-buscar-en-la-lista-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-descargar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-descargar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-cerrar-ventana-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-cerrar-ventana-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-buscar-en-la-lista-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-buscar-en-la-lista-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-casilla-de-verificación-marcada-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-casilla-de-verificación-marcada-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-contraseña-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-contraseña-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-orientación-de-bloqueo-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-orientación-de-bloqueo-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-añadir-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-añadir-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-menú-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-menú-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-casilla-indeterminada-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-casilla-indeterminada-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-descargar-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-descargar-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-selfies-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-selfies-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user3-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user3-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user1-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user1-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-menú-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-menú-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-engranaje-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-engranaje-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user1-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user1-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user2-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user2-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-fondo-de-pantalla-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-fondo-de-pantalla-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-buscar-en-la-lista-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-buscar-en-la-lista-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-descargar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-descargar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-accede-redondeado-derecho-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-accede-redondeado-derecho-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-configuración-de-sincronización-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-configuración-de-sincronización-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-signo-menos-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-signo-menos-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-selfies-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-selfies-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-cerrar-ventana-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-cerrar-ventana-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-selfies-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-selfies-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-casilla-de-verificación-marcada-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-casilla-de-verificación-marcada-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-contraseña-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-contraseña-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-en-alza-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-en-alza-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-engranaje-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-engranaje-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-menú-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-menú-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-descargar-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-descargar-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-selfies-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-selfies-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-página-principal-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-página-principal-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-borrar-para-siempre-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-borrar-para-siempre-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-contraseña-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-contraseña-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-soporte-informático-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-soporte-informático-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-descargar-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-descargar-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-configuración-de-sincronización-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-configuración-de-sincronización-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-configuración-de-sincronización-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-configuración-de-sincronización-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-menú-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-menú-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-accede-redondeado-derecho-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-accede-redondeado-derecho-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user3-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user3-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-engranaje-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-engranaje-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-casilla-indeterminada-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-casilla-indeterminada-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-borrar-para-siempre-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-borrar-para-siempre-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-orientación-de-bloqueo-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-orientación-de-bloqueo-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-proceso-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-proceso-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-descargar-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-descargar-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-soporte-informático-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-soporte-informático-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-contraseña-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-contraseña-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-signo-menos-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-signo-menos-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-accede-redondeado-derecho-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-accede-redondeado-derecho-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-contraseña-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-contraseña-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-cerrar-ventana-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-cerrar-ventana-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-en-alza-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-en-alza-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-casilla-indeterminada-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-casilla-indeterminada-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-engranaje-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-engranaje-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-soporte-informático-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-soporte-informático-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-engranaje-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-engranaje-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user2-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user2-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user2-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user2-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-página-principal-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-página-principal-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-proceso-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-proceso-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-signo-menos-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-signo-menos-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-cerrar-ventana-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-cerrar-ventana-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-buscar-en-la-lista-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-buscar-en-la-lista-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-casilla-de-verificación-marcada-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-casilla-de-verificación-marcada-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-orientación-de-bloqueo-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-orientación-de-bloqueo-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-borrar-para-siempre-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-borrar-para-siempre-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-signo-menos-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-signo-menos-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-soporte-informático-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-soporte-informático-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-en-alza-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-en-alza-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-casilla-de-verificación-marcada-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-casilla-de-verificación-marcada-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-cerrar-ventana-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-cerrar-ventana-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user3-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user3-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-soporte-informático-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-soporte-informático-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-accede-redondeado-derecho-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-accede-redondeado-derecho-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-borrar-para-siempre-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-borrar-para-siempre-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-casilla-indeterminada-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-casilla-indeterminada-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-soporte-informático-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-soporte-informático-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user3-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user3-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-menú-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-menú-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-cerrar-ventana-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-cerrar-ventana-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-fondo-de-pantalla-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-fondo-de-pantalla-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-selfies-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-selfies-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-borrar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-borrar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-contraseña-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-contraseña-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-descargar-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-descargar-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-buscar-en-la-lista-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-buscar-en-la-lista-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-página-principal-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-página-principal-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-contraseña-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-contraseña-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-página-principal-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-página-principal-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-añadir-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-añadir-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-proceso-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-proceso-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-fondo-de-pantalla-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-fondo-de-pantalla-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-añadir-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-añadir-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user3-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user3-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-orientación-de-bloqueo-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-orientación-de-bloqueo-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-cerrar-ventana-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-cerrar-ventana-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-añadir-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-añadir-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-signo-menos-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-signo-menos-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-fondo-de-pantalla-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-fondo-de-pantalla-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-página-principal-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-página-principal-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-casilla-indeterminada-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-casilla-indeterminada-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-buscar-en-la-lista-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-buscar-en-la-lista-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-fondo-de-pantalla-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-fondo-de-pantalla-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-buscar-en-la-lista-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-buscar-en-la-lista-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-engranaje-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-engranaje-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-en-alza-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-en-alza-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-descargar-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-descargar-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-selfies-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-selfies-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-accede-redondeado-derecho-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-accede-redondeado-derecho-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-casilla-indeterminada-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-casilla-indeterminada-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-borrar-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-borrar-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-añadir-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-añadir-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-cerrar-ventana-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-cerrar-ventana-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-soporte-informático-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-soporte-informático-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-contraseña-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-contraseña-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-proceso-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-proceso-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user1-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user1-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-orientación-de-bloqueo-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-orientación-de-bloqueo-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-en-alza-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-en-alza-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-borrar-para-siempre-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-borrar-para-siempre-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-engranaje-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-engranaje-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-casilla-de-verificación-marcada-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-casilla-de-verificación-marcada-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-en-alza-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-en-alza-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-contraseña-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-contraseña-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-selfies-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-selfies-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-proceso-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-proceso-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-soporte-informático-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-soporte-informático-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-signo-menos-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-signo-menos-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user1-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user1-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-proceso-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-proceso-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-proceso-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-proceso-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-casilla-de-verificación-marcada-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-casilla-de-verificación-marcada-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-key1-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-key1-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-key1-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-key1-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-key1-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-key1-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user4-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user4-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bl-user4-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Blue\bl-user4-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-key1-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-key1-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-key1-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-key1-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-key1-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-key1-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user4-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user4-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dk-user4-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Dark\dk-user4-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-key1-30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-key1-30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-key1-60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-key1-60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-key1-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-key1-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user4-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user4-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yw-user4-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Themes\Material_Outlined_Yellow\yw-user4-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

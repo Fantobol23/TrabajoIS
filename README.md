@@ -18,16 +18,16 @@
 ---
 ### REQUISITOS GENERALES :pencil:   
 
- - [ ] 1. Arquitectura base (mínimo 4 capas)
- - [ ] 2. Gestión de Login/Logout
- - [ ] 3. Gestión de Bitácora
- - [ ] 4. Gestión de Encriptado
+ - [x] 1. Arquitectura base (mínimo 4 capas)
+ - [x] 2. Gestión de Login/Logout
+ - [x] 3. Gestión de Bitácora
+ - [x] 4. Gestión de Encriptado
  - [ ] 5. Gestión de Dígito Verificador Vertical y Horizontal (DVV /DVH)
  - [ ] 6. Gestión de Perfiles de usuario
  - [ ] 7. Gestión de Múltiples idiomas
  - [ ] 8. Manejo de Excepciones
  - [ ] 9. Interfaz UI
- - [ ] 10. Diseño de Base de datos
+ - [x] 10. Diseño de Base de datos
  - [ ] 11. Diagrama de clases de todos los módulos implementados
  - [ ] 12. Modelo de datos parcial de todos los módulos implementados
  - [ ] 13. Diagramas: Clases, DER, Secuencia, Casos de Uso

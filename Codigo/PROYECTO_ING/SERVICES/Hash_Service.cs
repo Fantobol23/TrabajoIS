@@ -19,7 +19,7 @@ namespace SERVICES
 
                 StringBuilder builder = new StringBuilder();
                 foreach (byte b in hash)
-                    builder.Append(b.ToString("x2")); // Convierte a HEX
+                    builder.Append(b.ToString("x2"));
 
                 return builder.ToString();
             }

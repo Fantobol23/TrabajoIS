@@ -18,7 +18,7 @@ namespace DAL_DataAccess
         {
             _conexion = new SqlConnection();
             
-            _conexion.ConnectionString = @"INTEGRATED SECURITY=True; DATA SOURCE=MRCROWLY-NB\SQLEXPRESS; INITIAL CATALOG=PROYECTO_ING_DB";
+            _conexion.ConnectionString = @"INTEGRATED SECURITY=True; DATA SOURCE=EQUIPO\SQLEXPRESS; INITIAL CATALOG=PROYECTO_ING_DB";
             
             _conexion.Open();
         }

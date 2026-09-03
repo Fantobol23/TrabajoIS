@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace UI_Presentation.Forms.Main
+namespace UI_Presentation.Forms.F_Main
 {
     partial class FrmMain
     {

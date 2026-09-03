@@ -1,4 +1,4 @@
-﻿namespace UI_Presentation.Forms.Login_Register
+﻿namespace UI_Presentation.Forms.F_Login_Register
 {
     partial class FrmRegister
     {

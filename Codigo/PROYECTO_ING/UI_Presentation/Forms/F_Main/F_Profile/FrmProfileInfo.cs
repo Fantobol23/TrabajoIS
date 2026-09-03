@@ -12,7 +12,7 @@ using SERVICES.UserSession;
 using SERVICES;
 using BE_Entities.Users;
 
-namespace UI_Presentation.Forms.Profile
+namespace UI_Presentation.Forms.F_Profile
 {
     public partial class FrmProfileInfo : Form
     {

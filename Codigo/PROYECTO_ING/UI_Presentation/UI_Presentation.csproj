@@ -54,70 +54,70 @@
     <Compile Include="Controls\ButtonCloseForm.Designer.cs">
       <DependentUpon>ButtonCloseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\ActivityLog\FrmActivityLogList.cs">
+    <Compile Include="Forms\F_Main\F_ActivityLog\FrmActivityLogList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\ActivityLog\FrmActivityLogList.Designer.cs">
+    <Compile Include="Forms\F_Main\F_ActivityLog\FrmActivityLogList.Designer.cs">
       <DependentUpon>FrmActivityLogList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersCreate.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersCreate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersCreate.Designer.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersCreate.Designer.cs">
       <DependentUpon>FrmUsersCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersEdit.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersEdit.Designer.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersEdit.Designer.cs">
       <DependentUpon>FrmUsersEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersList.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersList.Designer.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersList.Designer.cs">
       <DependentUpon>FrmUsersList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersState.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersState.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Admin\Users\FrmUsersState.Designer.cs">
+    <Compile Include="Forms\F_Main\F_Admin\F_Users\FrmUsersState.Designer.cs">
       <DependentUpon>FrmUsersState.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login_Register\FrmLogin.cs">
+    <Compile Include="Forms\F_Login_Register\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login_Register\FrmLogin.Designer.cs">
+    <Compile Include="Forms\F_Login_Register\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login_Register\FrmRegister.cs">
+    <Compile Include="Forms\F_Login_Register\FrmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Login_Register\FrmRegister.Designer.cs">
+    <Compile Include="Forms\F_Login_Register\FrmRegister.Designer.cs">
       <DependentUpon>FrmRegister.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\FrmMain.cs">
+    <Compile Include="Forms\F_Main\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\FrmMain.Designer.cs">
+    <Compile Include="Forms\F_Main\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Profile\FrmProfileEdit.cs">
+    <Compile Include="Forms\F_Main\F_Profile\FrmProfileEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Profile\FrmProfileEdit.Designer.cs">
+    <Compile Include="Forms\F_Main\F_Profile\FrmProfileEdit.Designer.cs">
       <DependentUpon>FrmProfileEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Profile\FrmProfileInfo.cs">
+    <Compile Include="Forms\F_Main\F_Profile\FrmProfileInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Profile\FrmProfileInfo.Designer.cs">
+    <Compile Include="Forms\F_Main\F_Profile\FrmProfileInfo.Designer.cs">
       <DependentUpon>FrmProfileInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Main\Profile\FrmProfilePassword.cs">
+    <Compile Include="Forms\F_Main\F_Profile\FrmProfilePassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Main\Profile\FrmProfilePassword.Designer.cs">
+    <Compile Include="Forms\F_Main\F_Profile\FrmProfilePassword.Designer.cs">
       <DependentUpon>FrmProfilePassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -125,37 +125,37 @@
     <EmbeddedResource Include="Controls\ButtonCloseForm.resx">
       <DependentUpon>ButtonCloseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\ActivityLog\FrmActivityLogList.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_ActivityLog\FrmActivityLogList.resx">
       <DependentUpon>FrmActivityLogList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersCreate.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_Admin\F_Users\FrmUsersCreate.resx">
       <DependentUpon>FrmUsersCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersEdit.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_Admin\F_Users\FrmUsersEdit.resx">
       <DependentUpon>FrmUsersEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersList.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_Admin\F_Users\FrmUsersList.resx">
       <DependentUpon>FrmUsersList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Admin\Users\FrmUsersState.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_Admin\F_Users\FrmUsersState.resx">
       <DependentUpon>FrmUsersState.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login_Register\FrmLogin.resx">
+    <EmbeddedResource Include="Forms\F_Login_Register\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login_Register\FrmRegister.resx">
+    <EmbeddedResource Include="Forms\F_Login_Register\FrmRegister.resx">
       <DependentUpon>FrmRegister.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\FrmMain.resx">
+    <EmbeddedResource Include="Forms\F_Main\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Profile\FrmProfileEdit.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_Profile\FrmProfileEdit.resx">
       <DependentUpon>FrmProfileEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Profile\FrmProfileInfo.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_Profile\FrmProfileInfo.resx">
       <DependentUpon>FrmProfileInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Main\Profile\FrmProfilePassword.resx">
+    <EmbeddedResource Include="Forms\F_Main\F_Profile\FrmProfilePassword.resx">
       <DependentUpon>FrmProfilePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

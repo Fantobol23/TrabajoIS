@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UI_Presentation.Forms.Main;
+using UI_Presentation.Forms.F_Main;
 
-namespace UI_Presentation.Forms.Admin
+namespace UI_Presentation.Forms.F_Admin
 {
     public partial class FrmUsersCreate : Form
     {

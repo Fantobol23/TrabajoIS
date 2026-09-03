@@ -15,7 +15,7 @@ using BLL_Business.ActivityLog_Services;
 using BE_Entities.ActivityLog;
 using SERVICES.UserSession;
 
-namespace UI_Presentation.Forms.Admin
+namespace UI_Presentation.Forms.F_Admin
 {
     public partial class FrmUsersEdit : Form
     {

@@ -15,7 +15,7 @@ using SERVICES.UserSession;
 using BLL_Business.ActivityLog_Services;
 using BE_Entities.ActivityLog;
 
-namespace UI_Presentation.Forms.Profile
+namespace UI_Presentation.Forms.F_Profile
 {
     public partial class FrmProfileEdit : Form
     {

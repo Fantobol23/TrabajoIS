@@ -8,12 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using UI_Presentation.Forms.Admin;
-using UI_Presentation.Forms.Profile;
+using UI_Presentation.Forms.F_Admin;
+using UI_Presentation.Forms.F_Profile;
 using SERVICES.UserSession;
-using UI_Presentation.Forms.Main.ActivityLog;
+using UI_Presentation.Forms.F_Main.F_ActivityLog;
+using BLL_Business.ActivityLog_Services;
+using BE_Entities.ActivityLog;
 
-namespace UI_Presentation.Forms.Main
+namespace UI_Presentation.Forms.F_Main
 {
     public partial class FrmMain : Form
     {
@@ -22,6 +24,8 @@ namespace UI_Presentation.Forms.Main
             InitializeComponent();
         }
 
+        ActivityLog_Services _activityServices = new ActivityLog_Services();
+        ActivityLog actividad;
         UserAccount user_logged = UserSession.GetInstance().UserAccount;
 
         #region LOAD/CARGA INICIAL
@@ -39,6 +43,13 @@ namespace UI_Presentation.Forms.Main
             #region 1. ARCHIVO
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            actividad = new ActivityLog();
+            actividad.FechaLog = DateTime.Now;
+            actividad.TipoLog = ActivityType.Logout;
+            actividad.UserAccount = UserSession.GetInstance().UserAccount;
+
+            _activityServices.GuardarActividad(actividad);
+
             Application.Exit();
         }
             #endregion

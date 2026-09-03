@@ -1,4 +1,6 @@
-﻿using BLL_Business.ActivityLog_Services;
+﻿using BE_Entities.ActivityLog;
+using BLL_Business.ActivityLog_Services;
+using SERVICES.UserSession;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UI_Presentation.Forms.Main.ActivityLog
+namespace UI_Presentation.Forms.F_Main.F_ActivityLog
 {
     public partial class FrmActivityLogList : Form
     {
@@ -19,11 +21,18 @@ namespace UI_Presentation.Forms.Main.ActivityLog
         }
 
         ActivityLog_Services _activityLogs = new ActivityLog_Services();
-
+        ActivityLog actividad;
         private void FrmActivityLogList_Load(object sender, EventArgs e)
         {
             ActualizarGrilla();
             AplicarConfiguracionUI();
+
+            actividad = new ActivityLog();
+            actividad.FechaLog = DateTime.Now;
+            actividad.TipoLog = ActivityType.ReadActivityLog;
+            actividad.UserAccount = UserSession.GetInstance().UserAccount;
+
+            _activityLogs.GuardarActividad(actividad);
         }
 
         #region FUNCIONES/METODOS

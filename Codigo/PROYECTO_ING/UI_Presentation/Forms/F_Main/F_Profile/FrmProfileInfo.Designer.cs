@@ -1,4 +1,4 @@
-﻿namespace UI_Presentation.Forms.Profile
+﻿namespace UI_Presentation.Forms.F_Profile
 {
     partial class FrmProfileInfo
     {

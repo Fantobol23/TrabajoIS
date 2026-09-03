@@ -16,7 +16,7 @@ using BLL_Business.ActivityLog_Services;
 using BE_Entities.ActivityLog;
 
 
-namespace UI_Presentation.Forms.Login_Register
+namespace UI_Presentation.Forms.F_Login_Register
 {
     public partial class FrmRegister : Form
     {

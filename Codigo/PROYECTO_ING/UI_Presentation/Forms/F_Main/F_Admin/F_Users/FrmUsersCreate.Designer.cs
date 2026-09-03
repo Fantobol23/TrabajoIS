@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace UI_Presentation.Forms.Admin
+namespace UI_Presentation.Forms.F_Admin
 {
     partial class FrmUsersCreate
     {

@@ -32,6 +32,11 @@
             this.buttonCloseForm1 = new UI_Presentation.Controls.ButtonCloseForm();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.dgvActivityLogs = new System.Windows.Forms.DataGridView();
+            this.chkFiltrarFecha = new System.Windows.Forms.CheckBox();
+            this.lblDesde = new System.Windows.Forms.Label();
+            this.dtpDesde = new System.Windows.Forms.DateTimePicker();
+            this.lblHasta = new System.Windows.Forms.Label();
+            this.dtpHasta = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvActivityLogs)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +85,63 @@
             this.dgvActivityLogs.Size = new System.Drawing.Size(650, 265);
             this.dgvActivityLogs.TabIndex = 39;
             // 
+            // chkFiltrarFecha
+            // 
+            this.chkFiltrarFecha.AutoSize = true;
+            this.chkFiltrarFecha.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkFiltrarFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(203)))), ((int)(((byte)(92)))));
+            this.chkFiltrarFecha.Location = new System.Drawing.Point(99, 90);
+            this.chkFiltrarFecha.Name = "chkFiltrarFecha";
+            this.chkFiltrarFecha.Size = new System.Drawing.Size(160, 24);
+            this.chkFiltrarFecha.TabIndex = 40;
+            this.chkFiltrarFecha.Text = "Filtrar por fecha";
+            this.chkFiltrarFecha.UseVisualStyleBackColor = true;
+            this.chkFiltrarFecha.CheckedChanged += new System.EventHandler(this.FiltroFecha_Changed);
+            // 
+            // lblDesde
+            // 
+            this.lblDesde.AutoSize = true;
+            this.lblDesde.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesde.ForeColor = System.Drawing.Color.White;
+            this.lblDesde.Location = new System.Drawing.Point(99, 136);
+            this.lblDesde.Name = "lblDesde";
+            this.lblDesde.Size = new System.Drawing.Size(54, 20);
+            this.lblDesde.TabIndex = 41;
+            this.lblDesde.Text = "Desde";
+            // 
+            // dtpDesde
+            // 
+            this.dtpDesde.Enabled = false;
+            this.dtpDesde.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDesde.Location = new System.Drawing.Point(160, 132);
+            this.dtpDesde.Name = "dtpDesde";
+            this.dtpDesde.Size = new System.Drawing.Size(140, 26);
+            this.dtpDesde.TabIndex = 42;
+            this.dtpDesde.ValueChanged += new System.EventHandler(this.FiltroFecha_Changed);
+            // 
+            // lblHasta
+            // 
+            this.lblHasta.AutoSize = true;
+            this.lblHasta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHasta.ForeColor = System.Drawing.Color.White;
+            this.lblHasta.Location = new System.Drawing.Point(320, 136);
+            this.lblHasta.Name = "lblHasta";
+            this.lblHasta.Size = new System.Drawing.Size(51, 20);
+            this.lblHasta.TabIndex = 43;
+            this.lblHasta.Text = "Hasta";
+            // 
+            // dtpHasta
+            // 
+            this.dtpHasta.Enabled = false;
+            this.dtpHasta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpHasta.Location = new System.Drawing.Point(380, 132);
+            this.dtpHasta.Name = "dtpHasta";
+            this.dtpHasta.Size = new System.Drawing.Size(140, 26);
+            this.dtpHasta.TabIndex = 44;
+            this.dtpHasta.ValueChanged += new System.EventHandler(this.FiltroFecha_Changed);
+            // 
             // FrmActivityLogList
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -87,6 +149,11 @@
             this.ClientSize = new System.Drawing.Size(850, 500);
             this.ControlBox = false;
             this.Controls.Add(this.dgvActivityLogs);
+            this.Controls.Add(this.chkFiltrarFecha);
+            this.Controls.Add(this.lblDesde);
+            this.Controls.Add(this.dtpDesde);
+            this.Controls.Add(this.lblHasta);
+            this.Controls.Add(this.dtpHasta);
             this.Controls.Add(this.buttonCloseForm1);
             this.Controls.Add(this.lblTitulo);
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,6 +175,11 @@
 
         private Controls.ButtonCloseForm buttonCloseForm1;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.CheckBox chkFiltrarFecha;
+        private System.Windows.Forms.Label lblDesde;
+        private System.Windows.Forms.DateTimePicker dtpDesde;
+        private System.Windows.Forms.Label lblHasta;
+        private System.Windows.Forms.DateTimePicker dtpHasta;
         private System.Windows.Forms.DataGridView dgvActivityLogs;
     }
 }

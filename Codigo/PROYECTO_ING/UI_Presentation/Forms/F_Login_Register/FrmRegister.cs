@@ -14,7 +14,7 @@ using BE_Entities.Users;
 using SERVICES;
 using BLL_Business.ActivityLog_Services;
 using BE_Entities.ActivityLog;
-
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Login_Register
 {
@@ -23,6 +23,7 @@ namespace UI_Presentation.Forms.F_Login_Register
         public FrmRegister()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
 
         UserAccount_Services _userService = new UserAccount_Services();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace BE_Entities.Users
         public UserAccount()
         {
             Estado = new UserStatus();
+            roles = new List<Role>();
         }
         #endregion
 
@@ -79,6 +81,31 @@ namespace BE_Entities.Users
         {
             get { return estado; }
             set { estado = value; }
+        }
+
+        private List<Role> roles;
+
+        /// <summary>
+        /// Roles del usuario (con su árbol de permisos Composite ya resuelto).
+        /// Se cargan una sola vez en el login. [Browsable(false)] evita que aparezca
+        /// como columna en los DataGridView que listan usuarios.
+        /// </summary>
+        [Browsable(false)]
+        public List<Role> Roles
+        {
+            get { return roles; }
+            set { roles = value ?? new List<Role>(); }
+        }
+
+        /// <summary>True si alguno de sus roles otorga el permiso (búsqueda recursiva en el árbol).</summary>
+        public bool TienePermiso(string nombrePermiso)
+        {
+            foreach (var rol in roles)
+            {
+                if (rol.TienePermiso(nombrePermiso))
+                    return true;
+            }
+            return false;
         }
         #endregion
 

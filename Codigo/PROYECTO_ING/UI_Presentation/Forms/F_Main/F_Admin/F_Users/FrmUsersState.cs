@@ -16,6 +16,7 @@ using BE_Entities.ActivityLog;
 using SERVICES;
 using BLL_Business.ActivityLog_Services;
 using SERVICES.UserSession;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Admin
 {
@@ -24,6 +25,7 @@ namespace UI_Presentation.Forms.F_Admin
         public FrmUsersState()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
 
         UserAccount_Services _userServices = new UserAccount_Services();

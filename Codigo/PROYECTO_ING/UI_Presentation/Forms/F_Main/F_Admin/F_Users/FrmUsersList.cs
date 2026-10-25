@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Admin
 {
@@ -17,6 +18,7 @@ namespace UI_Presentation.Forms.F_Admin
         public FrmUsersList()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
 
         UserAccount_Services _userServices = new UserAccount_Services();

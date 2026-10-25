@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using SERVICES.UserSession;
 using SERVICES;
 using BE_Entities.Users;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Profile
 {
@@ -19,6 +20,7 @@ namespace UI_Presentation.Forms.F_Profile
         public FrmProfileInfo()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
 
         #region LOAD

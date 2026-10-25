@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UI_Presentation.Forms.F_Main;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Admin
 {
@@ -16,6 +17,7 @@ namespace UI_Presentation.Forms.F_Admin
         public FrmUsersCreate()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
 
         #region LOAD/CARGA INICIAL

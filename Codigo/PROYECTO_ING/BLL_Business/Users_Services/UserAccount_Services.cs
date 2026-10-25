@@ -10,6 +10,8 @@ using DAL_DataAccess;
 using DAL_DataAccess.DataEntities;
 using SERVICES;
 using SERVICES.UserSession;
+using BLL_Business.Integrity_Services;
+using BLL_Business.Role_Services;
 
 namespace BLL_Business.Users_Services
 {
@@ -17,6 +19,18 @@ namespace BLL_Business.Users_Services
     {
         UserAccount_Data _userRepository;
         Hash_Service _hashService;
+        readonly DigitoVerificador_Services _dvServices = new DigitoVerificador_Services();
+
+        /// <summary>
+        /// Registro(s) de usersaccounts que toca una operación: por id si ya existe,
+        /// por username si es un alta (todavía no tiene id).
+        /// </summary>
+        private static AlcanceDV AlcanceUsuario(UserAccount user)
+        {
+            return user.Id > 0
+                ? new AlcanceDV(TablasVerificables.USUARIOS, "id_user", user.Id)
+                : new AlcanceDV(TablasVerificables.USUARIOS, "username", user.Username);
+        }
 
         #region LOGIN
 
@@ -39,6 +53,7 @@ namespace BLL_Business.Users_Services
 
                     if (user_validado.Username != null && user_validado.Password != null)
                     {
+                        user_validado.Roles = CargarRoles(user_validado.Id);
                         UserSession.SessionLogin(user_validado);
                         user_valido = true;
                     }
@@ -56,6 +71,45 @@ namespace BLL_Business.Users_Services
             }
         }
 
+        /// <summary>
+        /// Roles del usuario con su árbol de permisos (Composite). Si las tablas de
+        /// permisos todavía no existen, el login sigue funcionando sin roles.
+        /// </summary>
+        private List<Role> CargarRoles(int idUsuario)
+        {
+            try
+            {
+                return new Role_Services.Role_Services().ObtenerRolesPorUsuario(idUsuario);
+            }
+            catch
+            {
+                return new List<Role>();
+            }
+        }
+
+        /// <summary>
+        /// Valida usuario/contraseña SIN iniciar sesión y verifica que tenga el permiso pedido.
+        /// Se usa en la pantalla de integridad, que aparece antes del login.
+        /// </summary>
+        public UserAccount ValidarCredencialesConPermiso(string username, string passwordPlano, string permiso)
+        {
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrEmpty(passwordPlano))
+                return null;
+
+            _hashService = new Hash_Service();
+            _userRepository = new UserAccount_Data();
+
+            var credenciales = new UserAccount { Username = username, Password = _hashService.EncriptarPassword(passwordPlano) };
+            UserAccount user = _userRepository.Login(credenciales);
+
+            if (user == null || user.Username == null || user.Id <= 0)
+                return null;
+
+            user.Roles = CargarRoles(user.Id);
+
+            return user.TienePermiso(permiso) ? user : null;
+        }
+
         #endregion
 
         #region C-R-U-D
@@ -69,7 +123,7 @@ namespace BLL_Business.Users_Services
             userAccount.Estado.Id = 1;
 
             _userRepository = new UserAccount_Data();
-            _userRepository.Insertar(userAccount);
+            _dvServices.Ejecutar(() => _userRepository.Insertar(userAccount), AlcanceUsuario(userAccount));
             _userRepository = null;
 
             return userAccount;
@@ -80,7 +134,7 @@ namespace BLL_Business.Users_Services
 
             try
             {
-                if (_userRepository.Editar(userAccount) == 1)
+                if (_dvServices.Ejecutar(() => _userRepository.Editar(userAccount), AlcanceUsuario(userAccount)) == 1)
                 {
                     UserSession.GetInstance().UserAccount = userAccount;
                 }
@@ -125,6 +179,9 @@ namespace BLL_Business.Users_Services
         {
             bool existe = false;
 
+            if (_userRepository == null)
+                _userRepository = new UserAccount_Data();
+
             UserAccount user_result = _userRepository.ObtenerUnoPorUsername(username);
 
             if (user_result != null)
@@ -150,7 +207,7 @@ namespace BLL_Business.Users_Services
             {
                 userAccount.Password = _hashService.EncriptarPassword(newPassword);
 
-                if (_userRepository.CambiarPassword(userAccount) == 1)
+                if (_dvServices.Ejecutar(() => _userRepository.CambiarPassword(userAccount), AlcanceUsuario(userAccount)) == 1)
                 {
                     UserSession.GetInstance().UserAccount = userAccount;
                     validado = true;
@@ -169,7 +226,7 @@ namespace BLL_Business.Users_Services
 
             try
             {
-                _userRepository.Deshabilitar(userAccount);
+                _dvServices.Ejecutar(() => _userRepository.Deshabilitar(userAccount), AlcanceUsuario(userAccount));
             }
             catch
             {
@@ -182,7 +239,7 @@ namespace BLL_Business.Users_Services
 
             try
             {
-                _userRepository.Habilitar(userAccount);
+                _dvServices.Ejecutar(() => _userRepository.Habilitar(userAccount), AlcanceUsuario(userAccount));
             }
             catch
             {

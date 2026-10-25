@@ -16,6 +16,10 @@ using SERVICES;
 using BLL_Business.Users_Services;
 using BLL_Business.ActivityLog_Services;
 using BE_Entities.ActivityLog;
+using BE_Entities.Languages;
+using BLL_Business.Language_Services;
+using SERVICES.Languages;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation
 {
@@ -24,7 +28,12 @@ namespace UI_Presentation
         public FrmLogin()
         {
             InitializeComponent();
+            CrearSelectorIdioma();
+            TraductorFormulario.Registrar(this);
         }
+
+        private ComboBox cmbIdioma;
+        private bool _cargandoIdiomas;
 
         Hash_Service _hashService = new Hash_Service();
         UserAccount_Services _userServices = new UserAccount_Services();
@@ -69,19 +78,19 @@ namespace UI_Presentation
                         activity.UserAccount = user;
                         _activityServices.GuardarActividad(activity);
 
-                        MessageBox.Show("Credenciales incorrectas","", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show(Traductor.T("FrmLogin.MsgCredencialesIncorrectas", "Credenciales incorrectas"), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         LimpiarCampos();
                    }
                 }
                 else
                 {
-                    MessageBox.Show("Debe completar los campos.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(Traductor.T("FrmLogin.MsgCompletarCampos", "Debe completar los campos."), "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     LimpiarCampos();
                 }
             }
             catch
             {
-                MessageBox.Show("No fue posible iniciar la sesión.");
+                MessageBox.Show(Traductor.T("FrmLogin.MsgNoIniciaSesion", "No fue posible iniciar la sesión."));
                 LimpiarCampos();
             }
         }
@@ -99,6 +108,59 @@ namespace UI_Presentation
         #endregion
 
         #region FUNCIONES/METODOS
+
+        /// <summary>Selector de idioma en el login: se puede elegir el idioma antes de ingresar.</summary>
+        private void CrearSelectorIdioma()
+        {
+            cmbIdioma = new ComboBox
+            {
+                Name = "cmbIdioma",
+                DropDownStyle = ComboBoxStyle.DropDownList,
+                Location = new Point(this.ClientSize.Width - 118, 8),
+                Size = new Size(110, 24),
+                Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                Tag = TraductorFormulario.TAG_NO_TRADUCIR
+            };
+            this.Controls.Add(cmbIdioma);
+            cmbIdioma.BringToFront();
+
+            try
+            {
+                _cargandoIdiomas = true;
+                var idiomas = new Idioma_Services().ListarIdiomas();
+                cmbIdioma.DataSource = idiomas;
+                cmbIdioma.DisplayMember = "Nombre";
+
+                Idioma actual = GestorIdioma.Instancia.IdiomaActual;
+                if (actual != null)
+                    cmbIdioma.SelectedItem = idiomas.FirstOrDefault(i => i.Id == actual.Id);
+            }
+            catch
+            {
+                cmbIdioma.Visible = false; // sin tablas de idiomas: sólo idioma por defecto
+            }
+            finally
+            {
+                _cargandoIdiomas = false;
+            }
+
+            cmbIdioma.SelectedIndexChanged += cmbIdioma_SelectedIndexChanged;
+        }
+
+        private void cmbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (_cargandoIdiomas || !(cmbIdioma.SelectedItem is Idioma idioma))
+                return;
+
+            try
+            {
+                new Idioma_Services().CambiarIdioma(idioma);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         public void LimpiarCampos()
         {

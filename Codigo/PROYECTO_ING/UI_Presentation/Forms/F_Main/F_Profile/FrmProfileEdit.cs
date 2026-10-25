@@ -14,6 +14,7 @@ using SERVICES;
 using SERVICES.UserSession;
 using BLL_Business.ActivityLog_Services;
 using BE_Entities.ActivityLog;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Profile
 {
@@ -22,6 +23,7 @@ namespace UI_Presentation.Forms.F_Profile
         public FrmProfileEdit()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
 
         UserAccount_Services _userService = new UserAccount_Services();

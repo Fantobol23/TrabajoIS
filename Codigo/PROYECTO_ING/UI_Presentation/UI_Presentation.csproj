@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -120,6 +120,26 @@
     <Compile Include="Forms\F_Main\F_Profile\FrmProfilePassword.Designer.cs">
       <DependentUpon>FrmProfilePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Security\FrmIdiomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Security\FrmIdiomas.Designer.cs">
+      <DependentUpon>FrmIdiomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Security\FrmIntegridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Security\FrmIntegridad.Designer.cs">
+      <DependentUpon>FrmIntegridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Security\FrmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Security\FrmPermisos.Designer.cs">
+      <DependentUpon>FrmPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\Traductor.cs" />
+    <Compile Include="Languages\TraductorFormulario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\ButtonCloseForm.resx">

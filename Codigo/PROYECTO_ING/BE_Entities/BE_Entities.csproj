@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -43,7 +43,18 @@
   <ItemGroup>
     <Compile Include="ActivityLog\ActivityLog.cs" />
     <Compile Include="ActivityLog\ActivityType.cs" />
+    <Compile Include="Integrity\ErrorIntegridad.cs" />
+    <Compile Include="Integrity\ResultadoIntegridad.cs" />
+    <Compile Include="Integrity\TablaVerificable.cs" />
+    <Compile Include="Integrity\TipoErrorIntegridad.cs" />
+    <Compile Include="Languages\Etiqueta.cs" />
+    <Compile Include="Languages\Idioma.cs" />
+    <Compile Include="Languages\Traduccion.cs" />
+    <Compile Include="Permissions\CompositePermission.cs" />
+    <Compile Include="Permissions\IPermission.cs" />
+    <Compile Include="Permissions\SimplePermission.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Role.cs" />
     <Compile Include="Users\UserAccount.cs" />
     <Compile Include="Users\UserStatus.cs" />
   </ItemGroup>

@@ -14,6 +14,7 @@ using SERVICES;
 using BLL_Business.ActivityLog_Services;
 using BE_Entities.ActivityLog;
 using SERVICES.UserSession;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Admin
 {
@@ -22,6 +23,7 @@ namespace UI_Presentation.Forms.F_Admin
         public FrmUsersEdit()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
         private static readonly Regex RegexPassword = new Regex(@"^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$", RegexOptions.Compiled);
         private static readonly Regex RegexEmail = new Regex(@"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$", RegexOptions.Compiled);

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UI_Presentation.Languages;
 
 namespace UI_Presentation.Forms.F_Main.F_ActivityLog
 {
@@ -18,10 +19,14 @@ namespace UI_Presentation.Forms.F_Main.F_ActivityLog
         public FrmActivityLogList()
         {
             InitializeComponent();
+            TraductorFormulario.Registrar(this);
         }
 
         ActivityLog_Services _activityLogs = new ActivityLog_Services();
         ActivityLog actividad;
+
+        // lista completa traída de la BD; el filtro por fecha trabaja sobre esta copia en memoria
+        List<ActivityLog> _todasLasActividades = new List<ActivityLog>();
         private void FrmActivityLogList_Load(object sender, EventArgs e)
         {
             ActualizarGrilla();
@@ -39,8 +44,50 @@ namespace UI_Presentation.Forms.F_Main.F_ActivityLog
 
         public void ActualizarGrilla()
         {
+            _todasLasActividades = _activityLogs.ObtenerTodos();
+
+            dtpDesde.Value = _todasLasActividades.Count > 0 ? _todasLasActividades.Min(a => a.FechaLog).Date : DateTime.Today;
+            dtpHasta.Value = DateTime.Today;
+
+            MostrarActividades();
+        }
+
+        /// <summary>
+        /// Si el check "Filtrar por fecha" está tildado muestra sólo los eventos entre
+        /// Desde y Hasta (ambos días incluidos); si no, muestra todos.
+        /// </summary>
+        private void MostrarActividades()
+        {
+            IEnumerable<ActivityLog> resultado = _todasLasActividades;
+
+            if (chkFiltrarFecha.Checked)
+            {
+                DateTime desde = dtpDesde.Value.Date;
+                DateTime hasta = dtpHasta.Value.Date.AddDays(1); // hasta el final del día elegido
+
+                resultado = resultado.Where(a => a.FechaLog >= desde && a.FechaLog < hasta);
+            }
+
             dgvActivityLogs.DataSource = null;
-            dgvActivityLogs.DataSource = _activityLogs.ObtenerTodos();
+            dgvActivityLogs.DataSource = resultado.ToList();
+
+            if (dgvActivityLogs.Columns.Count > 0 && dgvActivityLogs.Columns.Contains("IdLog"))
+                ConfigurarColumnas();
+        }
+
+        private void FiltroFecha_Changed(object sender, EventArgs e)
+        {
+            dtpDesde.Enabled = chkFiltrarFecha.Checked;
+            dtpHasta.Enabled = chkFiltrarFecha.Checked;
+
+            if (dtpDesde.Value.Date > dtpHasta.Value.Date)
+            {
+                MessageBox.Show(Traductor.T("FrmActivityLogList.MsgRangoInvalido", "La fecha Desde no puede ser posterior a Hasta."), "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpDesde.Value = dtpHasta.Value.Date;
+                return;
+            }
+
+            MostrarActividades();
         }
         public void AplicarConfiguracionUI()
         {
@@ -85,6 +132,11 @@ namespace UI_Presentation.Forms.F_Main.F_ActivityLog
             this.dgvActivityLogs.ColumnHeadersDefaultCellStyle.SelectionForeColor = Color.Black;
             this.dgvActivityLogs.ColumnHeadersDefaultCellStyle.Padding = paddingColumnas;
 
+            ConfigurarColumnas();
+        }
+
+        private void ConfigurarColumnas()
+        {
             // DATAGRIDVIEW COLUMNAS Y FILAS
             
             this.dgvActivityLogs.Columns["IdLog"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;

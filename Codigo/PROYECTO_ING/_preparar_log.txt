@@ -1,0 +1,25 @@
+﻿=== 10/11/2026 14:34:06 ===
+--- 1. Unblock-File y limpieza
+OK
+--- 2. Servicios SQL Server
+MSSQL$SQLEXPRESS Running
+--- 3. Script SQL
+Base PROYECTO_ING_DB existe: True
+SQL> Changed database context to 'PROYECTO_ING_DB'.
+SQL> Script ejecutado correctamente. Al iniciar la aplicación, recalcular los dígitos verificadores desde la pantalla de integridad.
+Lotes ejecutados: 51  errores: 0
+SQL> Changed database context to 'PROYECTO_ING_DB'.
+usuarios=4 permisos=11 user_roles=1 leyendas=179 traducciones=179
+SQL> Changed database context to 'PROYECTO_ING_DB'.
+Administrador asignado a: admin (Administrador)
+--- 4. Compilacion
+MSBuild: C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe
+
+  BE_Entities -> C:\PROYECTO_ING\BE_Entities\bin\Debug\BE_Entities.dll
+  SERVICES -> C:\PROYECTO_ING\SERVICES\bin\Debug\SERVICES.dll
+  DAL_DataAccess -> C:\PROYECTO_ING\DAL_DataAccess\bin\Debug\DAL_DataAccess.dll
+  BLL_Business -> C:\PROYECTO_ING\BLL_Business\bin\Debug\BLL_Business.dll
+  UI_Presentation -> C:\PROYECTO_ING\UI_Presentation\bin\Debug\UI_Presentation.exe
+ExitCode: 0
+EXE generado: True
+=== FIN ===
